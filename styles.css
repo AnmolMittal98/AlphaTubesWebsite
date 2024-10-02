@@ -1,0 +1,293 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #F9F9F9;
+    padding-top: 70px; /* Adjust this value based on the height of your header */
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/ALPHATUBES.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero .display-4 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero .lead {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #B89B5E;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #A58A52;
+}
+
+/* About Us Section */
+.about-us .row p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Products Section */
+.products .card {
+    transition: transform 0.3s;
+}
+
+.products .card:hover {
+    transform: translateY(-10px);
+}
+
+/* Gallery Section */
+.gallery img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Add this to your styles.css */
+.gallery-slider img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-slider img:hover {
+    transform: scale(1.05);
+}
+
+/* Ensure product category images are of the same size and symmetrical */
+.card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+/* Ensure industries we cater cards are of the same size */
+.industries .card {
+    height: 100%; /* Ensure cards take up the full height of the column */
+}
+
+/* Custom styles for Slick Slider */
+.slick-prev, .slick-next {
+    font-size: 24px;
+    color: #fff; /* Change to white for better visibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%; /* Circular shape */
+    width: 40px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    opacity: 0.8; /* Slightly transparent */
+    transition: opacity 0.3s;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-slide {
+    margin: 0 10px; /* Add spacing between images */
+}
+
+/* Custom styles for Lightbox arrows */
+.lb-nav a.lb-prev, .lb-nav a.lb-next {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.lb-nav a.lb-prev {
+    background: url('https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/prev.png') left 48% no-repeat;
+}
+
+.lb-nav a.lb-next {
+    background: url('https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/next.png') right 48% no-repeat;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Additional Custom Styles */
+.bg-primary {
+    background-color: #2C3E50 !important;
+}
+
+.bg-dark {
+    background-color: #34495E !important;
+}
+
+.text-white {
+    color: #FFFFFF !important;
+}
+
+.text-primary {
+    color: #B89B5E !important;
+}
+
+.btn-primary {
+    background-color: #B89B5E;
+    border-color: #B89B5E;
+}
+
+.btn-primary:hover {
+    background-color: #A58A52;
+    border-color: #A58A52;
+}
+
+.btn-light {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #2C3E50;
+}
+
+.btn-light:hover {
+    background-color: #F9F9F9;
+    border-color: #F9F9F9;
+    color: #2C3E50;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.list-group-item {
+    border: none;
+    background-color: transparent;
+}
+
+.list-group-item:hover {
+    background-color: #F9F9F9;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #B89B5E;
+    box-shadow: 0 0 0 0.2rem rgba(184, 155, 94, 0.25);
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+.modal-title {
+    font-size: 24px;
+}
+
+.modal-body {
+    font-size: 18px;
+}
+
+.modal-footer .btn {
+    font-size: 18px;
+}
+
+/* Ensure Google Form text is visible */
+iframe {
+    border: none;
+    width: 100%;
+    height: 400px;
+}
+
+iframe body {
+    color: #333; /* Set text color to ensure visibility */
+}
+
+.form-container {
+    background-color: #fff; /* Add a background color to the form container */
+    padding: 20px; /* Add padding to the form container */
+    border-radius: 10px; /* Add border radius for a nicer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+.whatsapp-icon a {
+    text-decoration: none;
+}

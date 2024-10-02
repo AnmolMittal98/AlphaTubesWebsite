@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipes and Fittings - Alpha Tubes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/logo.ico" type="image/x-icon">
+    <style>
+        /* Ensure Google Form text is visible */
+        iframe {
+            border: none;
+            width: 100%;
+            height: 400px;
+        }
+        iframe body {
+            color: #333; /* Set text color to ensure visibility */
+        }
+        .form-container {
+            background-color: #fff; /* Add a background color to the form container */
+            padding: 20px; /* Add padding to the form container */
+            border-radius: 10px; /* Add border radius for a nicer look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+        }
+        /* Add padding to the top of the content to prevent overlap with fixed header */
+        body {
+            padding-top: 70px; /* Adjust this value based on the height of your header */
+        }
+        /* Hero Section Overlay */
+        .hero {
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .hero .display-4 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero .lead {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        /* Product Section */
+        .product-section {
+            padding: 50px 0;
+        }
+        .product-section .row {
+            display: flex;
+            align-items: stretch; /* Ensure both columns stretch to the same height */
+        }
+        .product-section .col-md-6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-section .col-md-6 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the entire container */
+            border-radius: 10px;
+        }
+        .product-section .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100%; /* Ensure the card takes up the full height of the column */
+        }
+        .product-section .card-body {
+            padding: 20px;
+        }
+        .product-section .card-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .product-section .card-text {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white p-3 fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <img src="../images/logo.png" alt="Alpha Tubes Logo" class="img-fluid" style="max-height: 50px;">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="../index.html#home" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="../index.html#about" class="nav-link text-white">About Us</a></li>
+                        <li class="nav-item"><a href="../index.html#products" class="nav-link text-white">Products</a></li>
+                        <li class="nav-item"><a href="../index.html#gallery" class="nav-link text-white">Photo Gallery</a></li>
+                        <li class="nav-item"><a href="../index.html#industries" class="nav-link text-white">Industries We Cater</a></li>
+                        <li class="nav-item"><a href="../index.html#achievements" class="nav-link text-white">Achievements</a></li>
+                        <li class="nav-item"><a href="../index.html#clients" class="nav-link text-white">Clients</a></li>
+                        <li class="nav-item"><a href="../index.html#contact" class="nav-link text-white">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Pipes and Fittings</h1>
+            <p class="lead">High-Quality Pipes and Fittings for Various Applications</p>
+            <a href="#contact" class="btn btn-light btn-lg">Get a Quote</a>
+        </div>
+    </section>
+
+    <section id="product-details" class="product-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../images/product/pipes_and_fittings.JPG" alt="Pipes and Fittings" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Pipes and Fittings</h2>
+                            <p class="card-text">Our Pipes and Fittings are designed for various applications and are built to withstand harsh environmental conditions. These products are made from high-quality materials to ensure durability and long-term performance.</p>
+                            <p class="card-text"><strong>Features:</strong></p>
+                            <ul>
+                                <li>High-quality materials for durability</li>
+                                <li>Designed for various applications</li>
+                                <li>Built to withstand harsh environmental conditions</li>
+                                <li>Easy installation and maintenance</li>
+                            </ul>
+                            <p class="card-text"><strong>Applications:</strong></p>
+                            <ul>
+                                <li>Industrial settings</li>
+                                <li>Commercial buildings</li>
+                                <li>Residential applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subproducts" class="subproducts bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Subproducts</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">1. Flanges</h5>
+                            <img src="../images/product/pipes_and_fittings.JPG" class="card-img-top" alt="Pipes and Fittings">
+                            <p class="card-text">Description of Flanges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">2. GI Pipe and Fittings</h5>
+                            <p class="card-text">Description of GI Pipe and Fittings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">3. Handpump</h5>
+                            <p class="card-text">Description of Handpump.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">4. MS Pipe and Fittings</h5>
+                            <p class="card-text">Description of MS Pipe and Fittings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">5. Square Rectangle Hollow Section</h5>
+                            <p class="card-text">Description of Square Rectangle Hollow Section.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Reach Out to Us</h3>
+                    <address>
+                        <p><strong>Email:</strong> <a href="mailto:info@companyname.com" class="text-white">info@companyname.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+918048606772" class="text-white">+91 8048606772</a></p>
+                        <p><strong>Address:</strong> No. 108, Prakash Industrial Area, Giani Border, Sahibabad, Ghaziabad-201005, Uttar Pradesh, India</p>
+                    </address>
+                    <!-- WhatsApp Icon -->
+                    <div class="whatsapp-icon">
+                        <a href="https://wa.me/918048606772" target="_blank">
+                            <i class="fab fa-whatsapp fa-3x" style="color: #25D366;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-container">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFlE0d0cuHMnRd15UpBET6iP__MFYMoZvsYXidPGkcpS9OjQ/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Alpha Tubes. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // GSAP Animation for Header
+            gsap.from("header", { duration: 1, y: -100, opacity: 0, ease: "power2.out" });
+
+            // Smooth Scrolling for Navigation Links
+            document.querySelectorAll('nav ul li a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        // If the target element is not on the current page, navigate to the index.html and scroll to the target
+                        window.location.href = '../index.html#' + targetId;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
