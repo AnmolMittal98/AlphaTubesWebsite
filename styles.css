@@ -291,3 +291,26 @@ iframe body {
 .whatsapp-icon a {
     text-decoration: none;
 }
+
+/* Add this to your existing styles.css or include it in a <style> tag in your HTML */
+.clients-slider .client-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.clients-slider .client-item .logo-container {
+    background-color: white; /* White background for logos */
+    padding: 10px; /* Optional: Add padding around the logo */
+    border-radius: 5px; /* Optional: Add border-radius for a rounded look */
+    display: inline-block; /* Ensure the container only takes the necessary space */
+}
+
+.clients-slider .client-item .client-logo {
+    width: 150px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    object-fit: contain; /* Ensure the logo fits within the dimensions */
+}
