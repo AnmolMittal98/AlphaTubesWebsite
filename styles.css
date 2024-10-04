@@ -126,6 +126,7 @@ header {
     height: 100%; /* Ensure cards take up the full height of the column */
     display: flex;
     flex-direction: column;
+    padding: 1.25rem; /* Add padding to the card body */
 }
 
 .card-body {
@@ -133,7 +134,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.25rem; /* Add padding to the card body */
+    padding: 0; /* Remove padding from the card body */
 }
 
 .card-text {
@@ -145,9 +146,30 @@ header {
     margin-top: auto; /* Push the button to the bottom of the card */
 }
 
-/* Ensure industries we cater cards are of the same size */
+/* Ensure industries we cater cards are of the same size and better spaced */
 .industries .card {
     height: 100%; /* Ensure cards take up the full height of the column */
+    padding: 1rem; /* Add padding inside the cards */
+    margin-bottom: 1.5rem; /* Add margin between the cards */
+}
+
+.industries .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the text inside the card */
+    text-align: center; /* Center the text */
+}
+
+.industries .card-title {
+    margin-bottom: 1rem; /* Add space below the title */
+    font-weight: bold; /* Make the title bold */
+    text-decoration: underline; /* Underline the title */
+}
+
+.industries .card-text {
+    margin-bottom: 1rem; /* Add space below the text */
+    text-align: justify; /* Justify the text for better alignment */
 }
 
 /* Custom styles for Slick Slider */
@@ -337,4 +359,24 @@ iframe body {
     width: 150px; /* Set a fixed width */
     height: 100px; /* Set a fixed height */
     object-fit: contain; /* Ensure the logo fits within the dimensions */
+}
+
+/* Achievements Section */
+.achievements .card {
+    height: 100%; /* Ensure cards take up the full height of the column */
+    padding: 1rem; /* Add padding inside the cards */
+    margin-bottom: 1.5rem; /* Add margin between the cards */
+}
+
+.achievements .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the text inside the card */
+    text-align: center; /* Center the text */
+}
+
+.achievements .card-text {
+    margin-bottom: 1rem; /* Add space below the text */
+    text-align: center; /* Center the text */
 }
