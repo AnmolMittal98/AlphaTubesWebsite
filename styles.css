@@ -121,6 +121,30 @@ header {
     transform: scale(1.05);
 }
 
+/* Ensure product category cards are of the same size and symmetrical */
+.card {
+    height: 100%; /* Ensure cards take up the full height of the column */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1; /* Ensure the card body takes up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.25rem; /* Add padding to the card body */
+}
+
+.card-text {
+    margin-bottom: 1rem; /* Add space between text and button */
+    text-align: justify; /* Justify the text for better alignment */
+}
+
+.btn {
+    margin-top: auto; /* Push the button to the bottom of the card */
+}
+
 /* Ensure industries we cater cards are of the same size */
 .industries .card {
     height: 100%; /* Ensure cards take up the full height of the column */
